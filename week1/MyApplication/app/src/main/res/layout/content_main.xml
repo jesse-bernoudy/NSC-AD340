@@ -16,9 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:layout_weight="1"
-        android:text="@string/edit_message"
+        android:text=""
         android:id="@+id/edit_message"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:hint="@string/edit_message" />
 
     <Button
         android:layout_width="wrap_content"
