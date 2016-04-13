@@ -12,9 +12,20 @@
     tools:context="com.example.jesse.myapplication.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/worldText"
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:text="@string/edit_message"
+        android:id="@+id/edit_message"
+        android:layout_alignParentTop="true" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/button_send"
+        android:id="@+id/button"
+        android:layout_below="@+id/edit_message"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage"/>
 </RelativeLayout>

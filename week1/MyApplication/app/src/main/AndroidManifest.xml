@@ -18,7 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserPrompt"></activity>
+        <activity
+            android:name="com.example.jesse.myapplication.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.jesse.myapplication.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jesse.myapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
